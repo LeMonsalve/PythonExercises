@@ -1,2 +1,4 @@
 text = input("Enter a text: ")
-print(f"You entered: {text}")
+print(text + ": " + str(text.__len__()) + " characters")
+
+text_two = input("Enter a new text: ")
