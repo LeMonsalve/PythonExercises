@@ -4,15 +4,15 @@ def print_result_and_type(r) -> None:
   print(str(r) + ": " + type(r).__name__)
 
 # Function to calc the iva of price
-def calc_price_with_iva(price: float) -> float:
-  return price + (price * 0.19)
+def calc_price_with_iva(price: float, iva: float = 0.19) -> float:
+  return price + (price * iva)
 
-def calc_iva_of_price(price: float) -> float:
-  return price * 0.19
+def calc_iva_of_price(price: float, iva: float = 0.19) -> float:
+  return price * iva
 
-def iva_calc(price: float) -> None:
-  print(f'Price({price}) with iva: ' + str(calc_price_with_iva(price)))
-  print(f'Iva of price({price}): ' + str(calc_iva_of_price(price)))
+def iva_calc(price: float, iva: float = 0.19) -> None:
+  print(f'Price({price}) with iva: ' + str(calc_price_with_iva(price, iva)))
+  print(f'Iva of price({price}): ' + str(calc_iva_of_price(price, iva)))
 
 
 ## Steps
