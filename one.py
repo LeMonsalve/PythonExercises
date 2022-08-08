@@ -1,8 +1,5 @@
 ## Functions
 # Function to print an result and her type
-from numbers import Number
-
-
 def print_result_and_type(r) -> None:
   print(str(r) + ": " + type(r).__name__)
 
